@@ -199,7 +199,7 @@ export default function HomePage() {
             </Button>
             <Button
               size="sm"
-              className="bg-black hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-200 text-white dark:text-black rounded-full"
+              className="bg-green-600 hover:bg-green-700 text-white rounded-full"
               onClick={openWhatsApp}
             >
                 <FaWhatsapp className="mr-2 h-4 w-4" />
@@ -242,7 +242,7 @@ export default function HomePage() {
         >
           <Button
             size="lg"
-            className="w-full bg-black hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-200 text-white dark:text-black rounded-none py-7 relative overflow-hidden group"
+            className="w-full bg-green-600 hover:bg-green-700 text-white rounded-none py-7 relative overflow-hidden group"
             onClick={openWhatsApp}
           >
             <span className="relative z-10 flex items-center">
@@ -252,7 +252,7 @@ export default function HomePage() {
             <AnimatePresence>
               {isHovering && (
                 <motion.div
-                  className="absolute inset-0 bg-gray-800 dark:bg-gray-200"
+                  className="absolute inset-0 bg-green-700"
                   initial={{ x: "-100%" }}
                   animate={{ x: 0 }}
                   exit={{ x: "100%" }}
@@ -308,12 +308,12 @@ export default function HomePage() {
       </section>
 
       {/* Main Feature - Minimalista */}
-      <section className="bg-white dark:bg-black py-20 md:py-32 relative" style={{ backgroundColor: "white" }}>
+      <section className="py-20 md:py-32 relative bg-transparent text-white" >
         {/* Container para as partículas */}
-        <div id="particles-js" className="absolute inset-0 z-0" style={{ backgroundColor: "white" }}></div>
+        <div id="particles-js" className="absolute inset-0 z-0" ></div>
 
         <div className="container mx-auto px-4 relative z-10">
-          <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-10">
+          <div className="flex flex-col md:flex-row items-center text-center md:text-left gap-10">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -321,18 +321,18 @@ export default function HomePage() {
               viewport={{ once: true }}
               className="max-w-3xl"
             >
-              <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight text-black">
+              <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight ">
                 Tenha seu <span className="underline">funcionário de IA</span> personalizado
               </h2>
-              <p className="text-lg mb-8 text-black">
+              <p className="text-lg mb-8 ">
                 Nossos agentes de IA são desenvolvidos especificamente para as necessidades do seu negócio,
                 automatizando tarefas e melhorando a eficiência operacional com tecnologia de ponta.
               </p>
              
             </motion.div>
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 max-w-sm mx-auto">
         <img
-          src="/images/IMG-20250408-WA0019.jpg" // troque pelo caminho da sua imagem
+          src="/images/IMG-20250408-WA0018-removebg-preview.png" // troque pelo caminho da sua imagem
           alt="Funcionário de IA"
           className="rounded-xl shadow-lg w-full h-auto object-cover"
         />
@@ -418,7 +418,7 @@ export default function HomePage() {
       </section>
 
       {/* Casos de Uso Section */}
-      <section className="py-20 md:py-32 bg-white dark:bg-black relative z-10">
+      <section className="py-20 md:py-32 relative bg-transparent text-white z-10">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -445,15 +445,15 @@ export default function HomePage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="border border-black dark:border-white p-8"
+              className="border border-white bg-black text-white p-8"
             >
               <div className="flex items-start gap-6 mb-6">
-                <div className="p-4 border border-black dark:border-white rounded-none">
+                <div className="p-4 border border-white rounded-none">
                   <Calendar className="h-10 w-10" />
                 </div>
                 <h3 className="text-2xl font-bold mt-3">CLÍNICA DE ESTÉTICA</h3>
               </div>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+              <p className="leading-relaxed">
                 Imagine ter seus agendamentos automatizados por um assistente que trabalha 24 horas por dia, 7 dias por
                 semana — sempre disponível, sempre eficiente. Enquanto você descansa no fim de semana, sua agenda é
                 preenchida e seus serviços são divulgados com agilidade.
@@ -466,15 +466,15 @@ export default function HomePage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
-              className="border border-black dark:border-white p-8"
+              className="border border-white bg-black text-white p-8"
             >
               <div className="flex items-start gap-6 mb-6">
-                <div className="p-4 border border-black dark:border-white rounded-none">
+                <div className="p-4 border border-white rounded-none">
                   <Utensils className="h-10 w-10" />
                 </div>
                 <h3 className="text-2xl font-bold mt-3">RESTAURANTES</h3>
               </div>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+              <p className="leading-relaxed">
                 E se seu cardápio pudesse conversar com o cliente? Sugerir pratos, indicar bebidas e sobremesas,
                 recomendar o vinho ideal para cada refeição… Tudo isso em uma experiência humanizada e envolvente, que
                 encanta e fideliza.
@@ -487,15 +487,15 @@ export default function HomePage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
-              className="border border-black dark:border-white p-8"
+              className="border border-white bg-black text-white p-8"
             >
               <div className="flex items-start gap-6 mb-6">
-                <div className="p-4 border border-black dark:border-white rounded-none">
+                <div className="p-4 border border-white rounded-none">
                   <Truck className="h-10 w-10" />
                 </div>
                 <h3 className="text-2xl font-bold mt-3">SERVIÇOS DE ENTREGA</h3>
               </div>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+              <p className="leading-relaxed">
                 Seja pizza, hambúrguer, churrasco ou qualquer outro pedido — tudo pode ser apresentado de forma clara,
                 rápida e personalizada. Cardápio completo, tempo de entrega, promoções e preços, tudo na palma da mão,
                 com uma comunicação leve e eficiente.
@@ -508,15 +508,15 @@ export default function HomePage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
               viewport={{ once: true }}
-              className="border border-black dark:border-white p-8"
+              className="border border-white bg-black text-white p-8"
             >
               <div className="flex items-start gap-6 mb-6">
-                <div className="p-4 border border-black dark:border-white rounded-none">
+                <div className="p-4 border border-white rounded-none">
                   <Stethoscope className="h-10 w-10" />
                 </div>
                 <h3 className="text-2xl font-bold mt-3">AGENDAMENTO MÉDICO</h3>
               </div>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+              <p className="leading-relaxed">
                 Atenda pacientes 24/7 com agilidade e sem complicações. O assistente automatizado respeita seus horários
                 e pode gerenciar diferentes especialidades da clínica, oferecendo todas as informações que seus
                 pacientes precisam, de forma organizada e acessível.
@@ -535,7 +535,7 @@ export default function HomePage() {
             <p className="text-xl font-medium mb-4">
               Tudo isso — e muito mais — com o poder da tecnologia ao seu lado.
             </p>
-            <p className="text-lg text-gray-700 dark:text-gray-300">
+            <p className="leading-relaxed">
               Automatize, encante e potencialize o seu negócio com soluções criativas e eficientes.
             </p>
           </motion.div>
@@ -544,7 +544,7 @@ export default function HomePage() {
       
 
       {/* WhatsApp CTA Section - Minimalista */}
-      <section className="py-20 md:py-32 relative bg-black dark:bg-white text-white dark:text-black">
+      <section className="py-20 md:py-32 relative bg-transparent text-white">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <motion.div
@@ -561,7 +561,7 @@ export default function HomePage() {
               <div className="border border-white dark:border-black p-8">
                 <Button
                   size="lg"
-                  className="w-full bg-white hover:bg-gray-200 dark:bg-black dark:hover:bg-gray-800 text-black dark:text-white text-lg py-8 rounded-none"
+                  className="w-full bg-green-600 hover:bg-green-700 text-white text-lg py-8 rounded-none"
                   onClick={openWhatsApp}
                 >
                   <FaWhatsapp className="mr-2 !h-6 !w-6" />
@@ -602,7 +602,7 @@ export default function HomePage() {
               href="https://wa.me/5591982330102" // troque pelo número real com DDD e sem espaços
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 border border-black dark:border-white rounded-none hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors duration-300"
+              className="p-2 border border-green-600 text-green-600 hover:bg-green-600 hover:text-white transition-colors duration-300 rounded-none"
             >
               <FaWhatsapp className="h-5 w-5" />
               <span className="sr-only">WhatsApp</span>
@@ -631,7 +631,7 @@ export default function HomePage() {
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className="bg-black dark:bg-white text-white dark:text-black p-4 rounded-none shadow-lg"
+          className="bg-green-600 hover:bg-green-700 text-white p-4 rounded-none shadow-lg transition-colors duration-300"
           onClick={openWhatsApp}
         >
           <FaWhatsapp className="h-6 w-6" />
