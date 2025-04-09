@@ -330,11 +330,11 @@ export default function HomePage() {
               </p>
              
             </motion.div>
-            <div className="w-full md:w-1/2 max-w-sm mx-auto">
+            <div className="w-full flex justify-center">
         <img
           src="/images/IMG-20250408-WA0018-removebg-preview.png" // troque pelo caminho da sua imagem
           alt="Funcionário de IA"
-          className="rounded-xl shadow-lg w-full h-auto object-cover"
+          className="w-[280px] md:w-[360px] rounded-xl shadow-lg object-cover"
         />
       </div>
             
