@@ -623,7 +623,7 @@ export default function HomePage() {
           rel="noopener noreferrer"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className="bg-black dark:bg-white text-white dark:text-black p-4 rounded-none shadow-lg flex items-center justify-center"
+          className="bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition-transform duration-300"
         >
           <Instagram className="h-6 w-6" />
         </motion.a>
@@ -631,7 +631,7 @@ export default function HomePage() {
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className="bg-green-600 hover:bg-green-700 text-white p-4 rounded-none shadow-lg transition-colors duration-300"
+          className="bg-green-600 hover:bg-green-700 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition-colors duration-300"
           onClick={openWhatsApp}
         >
           <FaWhatsapp className="h-6 w-6" />
