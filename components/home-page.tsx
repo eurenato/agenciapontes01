@@ -50,8 +50,7 @@ export default function HomePage() {
   // Função para abrir o WhatsApp com mensagem pré-definida
   const openWhatsApp = () => {
     const phoneNumber = "5591982330102"
-    const message = encodeURIComponent("Olá! Gostaria de saber mais sobre os agentes de IA da Agência Pontes.")
-    window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank")
+    window.open(`https://wa.me/${phoneNumber}`, "_blank")
   }
 
   // Função para abrir o Instagram
@@ -179,35 +178,20 @@ export default function HomePage() {
        <ParticlesBackground />
       {/* Navbar Header */}
       <header className="fixed top-0 left-0 right-0 bg-white/90 dark:bg-black/90 backdrop-blur-md z-50 border-b border-gray-200 dark:border-gray-800">
-        <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-          {/* Logo on the left */}
-          <div className="relative">
-            <Image src="/images/logo.png" alt="Agência Pontes" width={80} height={32} className="h-auto w-auto" />
-            <div className="absolute -top-0.5 -right-0.5 w-1 h-1 bg-black dark:bg-white rounded-full animate-pulse" />
-          </div>
-
-          {/* Actions on the right */}
-          <div className="flex items-center space-x-3">
-            <Button
-              size="sm"
-              variant="ghost"
-              className="text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full p-2"
-              onClick={openInstagram}
-            >
-              <Instagram className="h-5 w-5" />
-              <span className="sr-only">Instagram</span>
-            </Button>
-            <Button
-              size="sm"
-              className="bg-green-600 hover:bg-green-700 text-white rounded-full"
-              onClick={openWhatsApp}
-            >
-                <FaWhatsapp className="mr-2 h-4 w-4" />
-              <span className="hidden sm:inline">Fale conosco</span>
-            </Button>
-          </div>
-        </div>
-      </header>
+  <div className="container mx-auto px-4 py-3 flex justify-center">
+    {/* Logo centralizada */}
+    <div className="relative">
+      <Image
+        src="/images/logo.png"
+        alt="Agência Pontes"
+        width={80}
+        height={32}
+        className="h-auto w-auto"
+      />
+      <div className="absolute -top-0.5 -right-0.5 w-1 h-1 bg-black dark:bg-white rounded-full animate-pulse" />
+    </div>
+  </div>
+</header>
 
       {/* Spacer for fixed header */}
       <div className="h-14"></div>
